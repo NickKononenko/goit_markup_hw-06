@@ -248,7 +248,7 @@ img {
   display: flex;
 }
 
-.footer-label {
+.subscribe-text {
   display: block;
   color: var(--text-color-white);
   margin-bottom: 16px;
@@ -268,8 +268,8 @@ img {
 }
 
 .footer-input:focus {
-  border: none;
-  outline: 1px solid var(--primary-brand);
+  border-color: var(--primary-brand);
+  outline: none;
 }
 
 .footer-input::placeholder {
@@ -289,18 +289,15 @@ img {
   border-radius: 4px;
   transition: background-color var(--def-duration) var(--def-timing-function);
   cursor: pointer;
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: var(--pressed-state);
-}
-
-.sb-btn-text {
-  margin-right: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .subscribe-icon {
@@ -690,7 +687,7 @@ img {
 
 .modal {
   position: absolute;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -831,8 +828,8 @@ img {
 }
 
 .form-input:focus {
-  outline: 1px solid var(--primary-brand);
-  border: none;
+  outline: none;
+  border-color: var(--primary-brand);
 }
 
 .form-input:focus + .input-icon {
